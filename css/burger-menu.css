@@ -1,0 +1,116 @@
+.burger-menu {
+    width: 100%;
+    height: fit-content;
+    background: var(--white-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px 8px 40px;
+    transition: .3s ease;
+    transform: translateX(-100%);
+    z-index: 110;
+}
+
+.header__burger-button:focus .burger-menu {
+    transform: translateX(0);
+}
+
+.burger-menu__logo-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.burger-menu__logo svg {
+    width: 101px;
+    height: 26px;
+}
+
+.burger-menu__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    
+}
+
+.burger-menu__form {
+    width: 100%;
+    position: relative;
+}
+
+.burger-menu__form input:focus::placeholder {
+    visibility: hidden;
+}
+
+.burger-menu__form::after {
+    content: url(../assets/search.svg);
+    padding: 10px;
+    background: var(--green-main-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 0 4px 4px 0;
+}
+
+.burger-menu__form input {
+    border: 1px solid var(--grey);
+    width: 100%;
+    outline: none;
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 9px 12px;
+    border-radius: 4px;
+}
+
+.burger-menu__navigation ul:nth-child(3) {
+    border-bottom: 1px solid var(--black);
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.burger-menu__navigation li,
+.burger-menu__navigation span {
+    text-align: left;
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    width: 100%;
+}
+
+.burger-menu__navigation li:not(:last-of-type) {
+    margin-bottom: 16px;
+}
+
+.burger-menu__navigation span {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+
+.header__background {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(14, 14, 14, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    display: none;
+}
+
+.header__burger-button:focus + .header__background {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .burger-menu {
+        width: 50%;
+    }
+}

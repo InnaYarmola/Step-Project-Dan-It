@@ -1,0 +1,51 @@
+@import "./reset.css";
+@import "./main.css";
+@import "./header.css";
+@import "./burger-menu.css";
+@import "./hero-section.css";
+@import "./academic-training.css";
+@import "./courses.css";
+@import "./featured-topics.css";
+@import "./business-partners.css";
+@import "./ideal-solution.css";
+@import "./choose-plan.css";
+@import "./students-photos.css";
+@import "./contact-us.css";
+@import "./footer.css";
+
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../fonts/Quicksand-Medium.woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../fonts/Quicksand-SemiBold.woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../fonts/Quicksand-Bold.woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    --green-main-color: #0F8277;
+    --light-green: #DBF3ED;
+    --white: #EEE;
+    --white-2: #FFF;
+    --grey: #5C5C5C;
+    --grey-2: #DADADA;
+    --grey-3: #BABABA;
+    --grey-4: #FDFDFD;
+    --grey-5: #8E8E8E;
+    --black: #000;
+    
+
+}

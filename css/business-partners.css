@@ -1,0 +1,155 @@
+.business-partners {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.business-partners__title {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.business-partners__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 24px;
+    justify-items: center;
+    align-items: center;
+}
+
+.business-partners__illinoy {
+    grid-column: span 2;
+    justify-self: start;
+}
+
+.business-partners__illinoy img {
+    width: 118px;
+    height: 24px;
+}
+
+.business-partners__google {
+    grid-column: span 2;
+}
+
+.business-partners__google img {
+    width: 62px;
+    height: 22px;
+}
+
+.business-partners__duke img {
+    width: 46px;
+    height: 16px;
+}
+
+.business-partners__mishigan img {
+    width: 33px;
+    height: 33px;
+}
+
+.business-partners__ibm {
+    justify-self: start;
+}
+
+.business-partners__ibm img {
+    width: 36px;
+    height: 14px;
+}
+
+.business-partners__penn img {
+    width: 75px;
+    height: 29px;
+}
+
+.business-partners__imperial {
+    grid-column: span 2;
+    justify-self: end;
+}
+
+.business-partners__imperial img {
+    width: 92px;
+    height: 25px;
+}
+
+.business-partners__stanford {
+    grid-column: span 2;
+    justify-self: end;
+}
+
+.business-partners__stanford img {
+    width: 91px;
+    height: 19px;
+}
+
+@media (min-width: 768px) {
+    .business-partners__title {
+        margin-bottom: 40px;
+    }
+
+    .business-partners__wrapper {
+        padding: 0 39px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .business-partners__title {
+        margin-bottom: 60px;
+    }
+
+    .business-partners__wrapper {
+        padding: 0;
+    }
+
+    .business-partners__illinoy img {
+        width: 178px;
+        height: 36px;
+    }
+
+
+    .business-partners__google {
+        justify-self: start;
+    }
+
+    .business-partners__google img {
+        width: 122px;
+        height: 42px;
+    }
+
+    .business-partners__duke img {
+        width: 106px;
+        height: 36px;
+    }
+
+    .business-partners__mishigan img {
+        width: 63px;
+        height: 66px;
+    }
+
+    .business-partners__ibm img {
+        width: 97px;
+        height: 39px;
+
+    }
+
+    .business-partners__penn img {
+        width: 136px;
+        height: 44px;
+    }
+
+
+    .business-partners__imperial img {
+        width: 152px;
+        height: 40px;
+    }
+
+    .business-partners__stanford {
+        grid-column: span 2;
+        justify-self: end;
+    }
+
+    .business-partners__stanford img {
+        width: 151px;
+        height: 33px;
+    }
+}

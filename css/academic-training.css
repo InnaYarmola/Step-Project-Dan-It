@@ -1,0 +1,150 @@
+.academic-training {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.academic-training__title-wrapper {
+    margin-top: 64px;
+}
+
+.academic-training__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.academic-training__card-danit {
+    background: url(../assets/img/academic-training/image-1.png);
+}
+
+.academic-training__subtitle-danit {
+    padding-left: 82px;
+    position: relative;
+}
+
+.academic-training__subtitle-danit::before {
+    content: url(../assets/dan-logo.svg);
+    width: 72px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.academic-training__option,
+.academic-training__subtitle-european-university {
+    position: relative;
+    padding-left: 29px;
+}
+
+.academic-training__option::before {
+    content: url(../assets/student-hat.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    left: 0;
+}
+
+.academic-training__card-european-university {
+    background: url(../assets/img/academic-training/image-2.png);
+}
+
+.academic-training__subtitle-european-university::before {
+    content: url(../assets/eu_logo.svg);
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 0;
+}
+
+.academic-training__card-projector {
+    background: url(../assets/img/academic-training/image-3.png);
+    padding-top: 86px;
+}
+
+.academic-training__subtitle-projector {
+    position: relative;
+    padding-left: 50px;
+
+}
+
+.academic-training__subtitle-projector::before {
+    content: url(../assets/logo-prjctr.svg);
+    width: 46px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.section-card {
+    min-height: 378px;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid var(--grey-2);
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    position: relative;
+}
+
+.section-card::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+@media (min-width: 768px) {
+    .academic-training {
+        gap: 40px;
+    }
+
+    .academic-training__title-wrapper {
+        /* grid-column: span 3; */
+        margin: 64px 0 0;
+    }
+
+    .academic-training__card-danit,
+    .academic-training__card-european-university,
+    .academic-training__card-projector {
+        flex: 1;
+    }
+
+    .academic-training__cards-wrapper {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .academic-training__card-projector {
+        padding-top: 45px;
+    }
+
+    .section-card {
+        min-height: 388px;
+        background-size: 100% 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .academic-training {
+        margin-bottom: 80px;
+    }
+    
+    .academic-training__title-wrapper {
+        margin-top: 80px;
+    }
+
+    .section-card__description {
+        min-height: 220px;
+    }
+
+    .section-card {
+        min-height: 441px;
+    }
+}

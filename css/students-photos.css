@@ -1,0 +1,86 @@
+.students-photos {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.students-photos__title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.students-photos__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.students-photos__item {
+    width: 100%;
+    height: 100%;
+}
+
+.students-photos__item-2 {
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.students-photos__item-4 {
+    grid-area: 3 / 1 / span 2 / span 2;
+}
+
+.students-photos__item-5 {
+    grid-area: 5 / 1 / span 1 / span 1;
+}
+
+.students-photos__item-7 {
+    grid-area: 5 / 2 / span 1 / span 1;
+}
+
+.students-photos__item-8 {
+    grid-area: 6 / 1 / span 1 / span 1;
+}
+
+.students-photos__item-9 {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+@media (min-width: 768px) {
+    .students-photos__title {
+        margin-bottom: 40px;
+    }
+
+    .students-photos__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .students-photos__item-3 {
+        grid-area: 3 / 1 / span 1 / span 1;
+    }
+
+    .students-photos__item-4 {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }    
+
+    .students-photos__item-5 {
+        grid-area: 3 / 3 / span 1 / span 1;
+    }
+
+    .students-photos__item-7 {
+        grid-area: 2 / 4 / span 1 / span 1;
+    }    
+
+    .students-photos__item-8 {
+        grid-area: 1 / 4 / span 1 / span 1;
+    }
+
+    .students-photos__item-9 {
+        grid-area: 1 / 2 / span 2 / span 2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .students-photos {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    
+}

@@ -1,0 +1,174 @@
+.ideal-solution {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.ideal-solution__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.ideal-solution__companies-logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 66px);
+}
+
+.ideal-solution__logo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideal-solution__loreal img {
+    width: 88px;
+    height: 16px;
+}
+
+.ideal-solution__p-and-g img {
+    width: 35px;
+    height: 33px;
+}
+
+.ideal-solution__reliance img {
+    width: 62px;
+    height: 46px;
+}
+
+.ideal-solution__danone img {
+    width: 77px;
+    height: 24px;
+}
+
+.ideal-solution__tata img {
+    width: 35px;
+    height: 30px;
+}
+
+.ideal-solution__emirates img {
+    width: 86px;
+    height: 25px;
+}
+
+.ideal-solution__capgemini img {
+    width: 77px;
+    height: 18px;
+}
+
+.ideal-solution__h img {
+    width: 33px;
+    height: 32px;
+}
+
+.ideal-solution__petrobras img {
+    width: 86px;
+    height: 16px;
+}
+
+.ideal-solution__loreal,
+.ideal-solution__p-and-g,
+.ideal-solution__danone,
+.ideal-solution__tata {
+    border-right: 1px solid var(--grey-3);
+    border-bottom: 1px solid var(--grey-3);
+}
+
+.ideal-solution__petrobras {
+    border-left: 1px solid var(--grey-3);
+    border-top: 1px solid var(--grey-3);
+}
+
+.ideal-solution__capgemini {
+    border-right: 1px solid var(--grey-3);
+}
+
+.ideal-solution__reliance {
+    border-bottom: 1px solid var(--grey-3);
+}
+
+@media (min-width: 768px) {
+    .ideal-solution {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .ideal-solution__title-wrapper,
+    .ideal-solution__companies-logo {
+        flex: 1;
+    }
+
+    .ideal-solution__companies-logo {
+        align-content: center;
+    }
+
+    .ideal-solution__button {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ideal-solution {
+        padding-top: 80px;
+        padding-bottom: 70px;
+        gap: 72px;
+        align-items: center;
+    }
+
+    .ideal-solution__companies-logo {
+        grid-template-rows: repeat(3, 136px);
+    }
+
+    .ideal-solution__logo {
+        padding: 10px;
+    }
+
+    .ideal-solution__loreal img {
+        width: 150px;
+        height: 27px;
+    }
+
+    .ideal-solution__p-and-g img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .ideal-solution__reliance img {
+        width: 111px;
+        height: 80px;
+    }
+
+    .ideal-solution__danone img {
+        width: 150px;
+        height: 48px;
+    }
+
+    .ideal-solution__tata img {
+        width: 63px;
+        height: 57px;
+    }
+
+    .ideal-solution__emirates img {
+        width: 151px;
+        height: 42px;
+    }
+
+    .ideal-solution__capgemini img {
+        width: 150px;
+        height: 34px;
+    }
+
+    .ideal-solution__h img {
+        width: 61px;
+        height: 60px;
+    }
+
+    .ideal-solution__petrobras img {
+        width: 150px;
+        height: 29px;
+    }
+}

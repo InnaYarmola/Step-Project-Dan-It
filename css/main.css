@@ -1,0 +1,255 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    display: block;
+}
+
+.content-container {
+    min-width: 320px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.green-background {
+    min-width: 320px;
+    background: var(--light-green);
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.hero-section__description {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.section-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-subtitle {
+    color: var(--green-main-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.section-description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.section-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.section-card__description {
+    padding: 24px 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.section-card__subtitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.section-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.section-card__option {
+    color: var(--green-main-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.btn {
+    min-width: 74px;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn-transparent {
+    background: inherit;
+    color: var(--green-main-color);
+}
+
+.btn-green {
+    background: var(--green-main-color);
+    color: var(--white);
+}
+
+.btn-more-options {
+    color: var(--green-main-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+    position: relative;
+    display: block;
+    padding-right: 35px;
+    width: fit-content;
+}
+
+.btn-more-options::after {
+    content: url(../assets/arrow-right.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.search-form {
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .content-container {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .green-background {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .section-card__description {
+        justify-content: space-between;
+        min-height: 194px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content-container {
+        max-width: 1368px;
+        margin: 0 auto;
+    }
+
+    .section-container {
+        width: 93vw;
+        max-width: 1296px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .btn-more-options {
+        font-size: 20px;
+    }
+
+    .hero-section__description {
+        font-size: 22px;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .section-description {
+        font-size: 20px;
+    }
+
+    .section-card__subtitle {
+        font-size: 16px;
+    }
+
+    .section-card__title {
+        font-size: 24px;
+    }
+
+    .section-card__option {
+        font-size: 16px;
+    }
+
+    .search-form {
+        display: block;
+        width: 330px;
+        position: relative;
+    }
+
+    .search-form input:focus::placeholder {
+        visibility: hidden;
+    }
+
+    .search-form::after {
+        content: url(../assets/search.svg);
+        padding: 10px;
+        background: var(--green-main-color);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .search-form input {
+        border: 1px solid var(--grey);
+        width: 100%;
+        outline: none;
+        color: var(--grey);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 120%;
+        padding: 9px 12px;
+        border-radius: 4px;
+    }
+
+    .green-background {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+
+    .green-background-desktop {
+        width: 93vw;
+        max-width: 1296px;
+        margin: 0 auto;
+    }
+
+}

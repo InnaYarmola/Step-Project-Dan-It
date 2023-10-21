@@ -1,0 +1,129 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: var(--white-2);
+}
+
+.header__container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.header__burger-button {
+    border-style: none;
+    background: inherit;
+    width: 42px;
+    height: 38px;
+    background: url(../assets/burger-menu.svg);
+    cursor: pointer;
+}
+
+.header__logo svg {
+    width: 101px;
+    height: 26px;
+}
+
+.header__btn-explore {
+    display: none;
+}
+
+.header__buttons-container {
+    display: flex;
+    gap: 16px;
+}
+
+.header__btn-search {
+    display: none;
+}
+
+.header__navigation {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .header__btn-search {
+        display: block;
+        min-width: fit-content;
+        padding: 10px;
+    }
+
+    .header__btn-search svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .header__container {
+        padding: 30px 36px;
+    }
+
+    .header__logo-container {
+        gap: 44px;
+    }
+
+    .header__burger-button {
+        display: none;
+    }
+
+    .header__logo svg {
+        width: 147px;
+        height: 38px;
+    }
+
+    .header__buttons-container {
+        display: flex;
+        gap: 16px;
+    }
+
+    .header__btn-search {
+        display: none;
+    }
+
+    .header__btn-explore {
+        display: block;
+        min-width: fit-content;
+        padding-right: 28px;
+        position: relative;
+    }
+
+    .header__btn-explore::after {
+        content: url(../assets/arrow-down.svg);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    .header__navigation {
+        display: block;
+    }
+
+    .header__navigation-list {
+        display: flex;
+        gap: 48px;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header__navigation-list a {
+        color: var(--black);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+
+}
